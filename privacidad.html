@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidad · MesaLista</title>
+<meta name="description" content="Política de privacidad de MesaLista: qué datos maneja, cómo se usa el acceso a Google Drive y cómo revocarlo.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav><a href="index.html">&larr; Inicio</a></nav>
+  <h1>Política de privacidad</h1>
+  <p class="lead">MesaLista · Última actualización: 16 de noviembre de 2026</p>
+
+  <p>MesaLista es un sistema de punto de venta que se instala y funciona en el equipo del restaurante que lo utiliza. Esta política explica qué información maneja la aplicación y cómo se usa el acceso opcional a Google Drive.</p>
+
+  <h2>1. Qué información maneja la aplicación</h2>
+  <ul>
+    <li>Pedidos, productos, recetas, inventario y movimientos de caja del negocio.</li>
+    <li>Gastos y sus soportes (imágenes o PDF de facturas que el usuario adjunta).</li>
+    <li>Registros de nómina diaria: nombre y cédula del empleado, valor pagado y firma opcional.</li>
+    <li>Usuarios del sistema (nombre de usuario, rol y contraseña almacenada de forma cifrada).</li>
+  </ul>
+  <p>Esta información la ingresa el propio negocio. MesaLista no recopila datos de los clientes finales del restaurante más allá de lo que el negocio decida anotar en un pedido (por ejemplo, un nombre o dirección de domicilio).</p>
+
+  <h2>2. Dónde se almacena</h2>
+  <p>Todos los datos se guardan <strong>localmente</strong>, en una base de datos en el equipo del negocio. Los desarrolladores de MesaLista no tienen acceso a esa información y la aplicación no la envía a servidores propios.</p>
+
+  <h2>3. Uso de Google Drive (opcional)</h2>
+  <p>El administrador del negocio puede conectar su cuenta de Google para activar un respaldo. Esta función está <strong>desactivada por defecto</strong> y solo funciona después de que el propietario la autoriza.</p>
+  <div class="card">
+    <p><strong>Permiso solicitado:</strong> <code>https://www.googleapis.com/auth/drive.file</code></p>
+    <p>Este permiso solo permite a la aplicación ver y administrar los archivos que ella misma crea en el Drive del propietario. La aplicación <strong>no puede leer, listar ni modificar</strong> ningún otro archivo del Drive.</p>
+  </div>
+  <p>Cuando el administrador pulsa «Sincronizar», la aplicación crea una carpeta en su Drive y sube a ella:</p>
+  <ul>
+    <li>los soportes de gastos adjuntados;</li>
+    <li>reportes en Excel (ventas, gastos y resumen por mes);</li>
+    <li>una copia de la base de datos.</li>
+  </ul>
+  <p>Estos archivos quedan en la cuenta de Google del propietario y solo son accesibles para quien él decida, según la configuración de acceso de la carpeta. El flujo es de un solo sentido: la aplicación envía copias a Drive y no descarga contenido desde él.</p>
+
+  <h2>4. Uso de la información de Google</h2>
+  <p>La información obtenida mediante las APIs de Google (el token de acceso y el correo de la cuenta conectada) se usa únicamente para realizar el respaldo descrito arriba. El token se guarda cifrado en el equipo del negocio. MesaLista:</p>
+  <ul>
+    <li>no vende ni comparte datos de Google con terceros;</li>
+    <li>no los usa para publicidad ni para entrenar modelos de inteligencia artificial;</li>
+    <li>no permite que personas lean esos datos, salvo que el propio usuario lo haga desde su cuenta.</li>
+  </ul>
+  <p>El uso y la transferencia de la información recibida de las APIs de Google se ajustan a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de Uso Limitado.</p>
+
+  <h2>5. Cómo desconectar y borrar</h2>
+  <ul>
+    <li>El administrador puede desconectar Google Drive en cualquier momento desde Configuración → Respaldo; el token guardado se elimina.</li>
+    <li>También puede revocar el acceso en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Los archivos ya subidos permanecen en su Drive hasta que él los elimine.</li>
+    <li>Los datos locales se pueden borrar eliminando la base de datos del equipo.</li>
+  </ul>
+
+  <h2>6. Seguridad</h2>
+  <p>Las contraseñas se almacenan con un algoritmo de hash, las credenciales de Google se guardan cifradas y el acceso al sistema está limitado por roles. El negocio es responsable de proteger el equipo donde se ejecuta la aplicación y de controlar quién accede a su carpeta de Drive.</p>
+
+  <h2>7. Cambios y contacto</h2>
+  <p>Si esta política cambia, se actualizará la fecha en esta página. Para dudas o solicitudes sobre privacidad, escribe a <a href="mailto:luedco2009@gmail.com">luedco2009@gmail.com</a>.</p>
+
+  <footer><a href="index.html">Inicio</a></footer>
+</main>
+</body>
+</html>
